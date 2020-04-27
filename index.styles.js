@@ -82,6 +82,11 @@ const Wrapper = styled.div`
       }
 
       .like-profiles {}
+
+      // .tools { .. }
+      // .tools .tool { .. }
+      // .tools .tool.tool-save { .. }
+      // .tools .tool-save { .. }
       .tools {
         border-top: solid 1px #ccc;
         padding-top: .5em;
@@ -94,10 +99,14 @@ const Wrapper = styled.div`
           height: 30px;
           background: #000;
           margin: 0 4px;
+
+          &.tool-save {
+            float: left;
+          }
         }
 
         .tool-save {
-          float: right;
+          float: right !important;
         }
       }
     }
